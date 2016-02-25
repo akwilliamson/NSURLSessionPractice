@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		97B6FF681C7F775100930487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B6FF671C7F775100930487 /* AppDelegate.swift */; };
-		97B6FF6A1C7F775100930487 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B6FF691C7F775100930487 /* ViewController.swift */; };
 		97B6FF6D1C7F775100930487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B6FF6B1C7F775100930487 /* Main.storyboard */; };
 		97B6FF6F1C7F775100930487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B6FF6E1C7F775100930487 /* Assets.xcassets */; };
 		97B6FF721C7F775100930487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B6FF701C7F775100930487 /* LaunchScreen.storyboard */; };
+		97B6FF7A1C7F77D200930487 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B6FF791C7F77D200930487 /* PhotosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		97B6FF641C7F775100930487 /* Photorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B6FF671C7F775100930487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97B6FF691C7F775100930487 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		97B6FF6C1C7F775100930487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97B6FF6E1C7F775100930487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97B6FF711C7F775100930487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97B6FF731C7F775100930487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97B6FF791C7F77D200930487 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				97B6FF671C7F775100930487 /* AppDelegate.swift */,
-				97B6FF691C7F775100930487 /* ViewController.swift */,
 				97B6FF6B1C7F775100930487 /* Main.storyboard */,
 				97B6FF6E1C7F775100930487 /* Assets.xcassets */,
 				97B6FF701C7F775100930487 /* LaunchScreen.storyboard */,
 				97B6FF731C7F775100930487 /* Info.plist */,
+				97B6FF791C7F77D200930487 /* PhotosViewController.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B6FF6A1C7F775100930487 /* ViewController.swift in Sources */,
+				97B6FF7A1C7F77D200930487 /* PhotosViewController.swift in Sources */,
 				97B6FF681C7F775100930487 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
