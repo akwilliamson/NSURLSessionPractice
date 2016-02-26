@@ -23,7 +23,8 @@ class PhotoStore {
         
         let task = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
             if let jsonData = data {
-                do { let jsonObject: AnyObject = try NSJSONSerialization.JSONObjectWithData(jsonData, options: [])
+                do {
+                    let jsonObject: AnyObject = try NSJSONSerialization.JSONObjectWithData(jsonData, options: [])
                     print(jsonObject)
                 } catch let error {
                     print("Error creating JSON object: \(error)")

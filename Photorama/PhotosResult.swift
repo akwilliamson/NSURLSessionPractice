@@ -8,9 +8,15 @@
 
 import Foundation
 
-enum PhotoResult {
+enum PhotosResult {
     
     case Success([Photo])
     case Failure(ErrorType)
     
+}
+
+enum FlickrError: ErrorType {
+
+    case InvalidJSONData
+
 }
