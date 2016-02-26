@@ -11,11 +11,16 @@ import Foundation
 struct FlickrAPI {
     
     private static let baseURLString = "https://api.flickr.com/services/rest"
-    
     private static let APIKey = "a6d819499131071f158fd740860a5a88"
     
+    private static let dateFormatter: NSDateFormatter = {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        return formatter
+    }()
+    
     private static func flickrURLComponents(method method: Method, parameters: [String: String]?) -> NSURL? {
-        
+
         guard let components = NSURLComponents(string: baseURLString) else { return nil }
         
         var queryItems = [NSURLQueryItem]()
