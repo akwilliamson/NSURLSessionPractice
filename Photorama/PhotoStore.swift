@@ -15,7 +15,7 @@ class PhotoStore {
         return NSURLSession(configuration: config)
     }()
     
-    func fetchRecentPhotos() {
+    func fetchRecentPhotos(completion completion: (PhotosResult) -> Void) {
     
         guard let url = FlickrAPI.recentPhotosURL() else { return }
         
@@ -23,6 +23,7 @@ class PhotoStore {
         
         let task = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
             let result = self.processRecentPhotosRequest(data: data, error: error)
+            completion(result)
         }
         task.resume()
     }
