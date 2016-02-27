@@ -55,7 +55,7 @@ struct FlickrAPI {
     
         guard let photoID = json["id"] as? String,
                   title = json["title"] as? String,
-                  dateString = json["dateTaken"] as? String,
+                  dateString = json["datetaken"] as? String,
                   photoURLString = json["url_h"] as? String,
                   url = NSURL(string: photoURLString),
                   dateTaken = dateFormatter.dateFromString(dateString) else {
@@ -77,6 +77,17 @@ struct FlickrAPI {
             }
             var finalPhotos = [Photo]()
             
+            for photoJSON in photosArray {
+                if let photo = photoFromJSONObject(photoJSON) {
+                    finalPhotos.append(photo)
+                }
+            }
+            
+            if finalPhotos.count == 0 && photosArray.count > 0 {
+                // Unable to parse any photos, perhaps JSON format has changed
+                return .Failure(FlickrError.InvalidJSONData)
+            }
+            
             return .Success(finalPhotos)
         } catch let error {
             return .Failure(error)
@@ -84,7 +95,7 @@ struct FlickrAPI {
     }
     
     static func recentPhotosURL() -> NSURL? {
-        guard let url = flickrURLComponents(method: .RecentPhotos, parameters: ["extras" : "url_h,date_take"]) else { return nil }
+        guard let url = flickrURLComponents(method: .RecentPhotos, parameters: ["extras" : "url_h,date_taken"]) else { return nil }
         
         return url
     }

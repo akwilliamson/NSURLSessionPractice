@@ -12,6 +12,7 @@
 		978DEFA71C80076000C90A9C /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978DEFA61C80076000C90A9C /* PhotoStore.swift */; };
 		978DEFA91C8038C900C90A9C /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978DEFA81C8038C900C90A9C /* Photo.swift */; };
 		978DEFAB1C804C5000C90A9C /* PhotosResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978DEFAA1C804C5000C90A9C /* PhotosResult.swift */; };
+		978DEFAD1C80F22F00C90A9C /* ImageResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978DEFAC1C80F22F00C90A9C /* ImageResult.swift */; };
 		97B6FF681C7F775100930487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B6FF671C7F775100930487 /* AppDelegate.swift */; };
 		97B6FF6D1C7F775100930487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B6FF6B1C7F775100930487 /* Main.storyboard */; };
 		97B6FF6F1C7F775100930487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B6FF6E1C7F775100930487 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		978DEFA61C80076000C90A9C /* PhotoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
 		978DEFA81C8038C900C90A9C /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		978DEFAA1C804C5000C90A9C /* PhotosResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosResult.swift; sourceTree = "<group>"; };
+		978DEFAC1C80F22F00C90A9C /* ImageResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResult.swift; sourceTree = "<group>"; };
 		97B6FF641C7F775100930487 /* Photorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B6FF671C7F775100930487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97B6FF6C1C7F775100930487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				978DEFA61C80076000C90A9C /* PhotoStore.swift */,
 				978DEFA81C8038C900C90A9C /* Photo.swift */,
 				978DEFAA1C804C5000C90A9C /* PhotosResult.swift */,
+				978DEFAC1C80F22F00C90A9C /* ImageResult.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				978DEFA51C7FDD9400C90A9C /* Method.swift in Sources */,
 				978DEFA31C7FDCDD00C90A9C /* FlickrAPI.swift in Sources */,
 				97B6FF7A1C7F77D200930487 /* PhotosViewController.swift in Sources */,
+				978DEFAD1C80F22F00C90A9C /* ImageResult.swift in Sources */,
 				97B6FF681C7F775100930487 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
